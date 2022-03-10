@@ -1,0 +1,43 @@
+Unified Modeling LanguageImmersive Reader
+ให้นักศึกษาวาด diagram ตามมาตรฐาน UML เวอร์ชัน 2.5 ให้สามารถสื่อสารข้อมูลได้ถูกต้องและครบถ้วนตามที่โจทย์กำหนด
+
+สามารถ download ไฟล์จาก
+https://kmitlthailand-my.sharepoint.com/:u:/g/personal/parinya_ek_kmitl_ac_th/EZ5UPxgJ42VNtCb_Hai7utsBFaHQo2j0HbePfJ5Bv85YPg?e=adbQ3C
+โดยระบุ password ว่า UncleBob
+
+ซึ่งประกอบไปด้วยไฟล์ code ภาษา Java จำนวน 7 ไฟล์
+Politician.java
+OrderIssuable.java
+MemberOfParliament.java
+Parliament.java
+PrimeMinister.java
+Cabinet.java
+Minister.java
+สำหรับไฟล์ Main.java เป็นเพียงตัวอย่างแสดงการใช้งาน ไม่ต้องนำไปวาด Diagram
+
+
+
+
+จงวาด Class Diagram ที่สามารถนำเสนอข้อมูลดังต่อไปนี้ได้ถูกต้องครบถ้วน
+
+(3 คะแนน) ข้อมูลภายในแต่ละ Classifier
+ชื่อของ Classifier
+ประเภทของ Classifier
+Attribute
+Operation (Method)
+Visibility (Access Modifier)
+Non-Access Modifier
+
+(3 คะแนน) ความสัมพันธ์ระหว่าง Classifiers
+Dependency*
+Association**
+Association End***
+Navigability****
+Visibility
+Multiplicity
+
+* ไม่จำเป็นต้องระบุ keyword หรือ stereotype แต่อนุญาตให้นักศึกษาเขียนได้เพื่อความเข้าใจของตนเอง
+** ความสัมพันธ์แบบ Aggregation และ Composition จะไม่นำมาตรวจสอบความถูกต้องหรือคิดคะแนน แต่อนุญาตให้นักศึกษาเขียนได้เพื่อความเข้าใจของตนเอง
+*** ไม่จำเป็นต้องใส่ dot ที่ association ends เพื่อแสดง ownership แต่อนุญาตให้นักศึกษาเขียนได้เพื่อความเข้าใจของตนเอง
+**** แนะนำให้ผู้เข้าสอบ ระบุ Navigability โดยใช้แนวทางที่ 3 ตามที่ระบุในเอกสารมาตรฐาน UML 2.5.1 หน้า 203 ที่ระบุไว้ว่า Suppress all crosses. 
+Suppress arrows for Associations with navigability in both directions, and show arrows only for Associations with one-way navigability.
