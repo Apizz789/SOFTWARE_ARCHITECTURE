@@ -1,5 +1,4 @@
-// package com.solid.lsp;
-
+package lsp;
 public class Rectangle {
     // DO NOT EDIT THE FILE FROM THIS LINE ONWARD!!
     private int width;
