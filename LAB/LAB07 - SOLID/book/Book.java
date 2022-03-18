@@ -1,4 +1,4 @@
-package com.solid.book;
+package book;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -47,7 +47,7 @@ public class Book implements Interface_Book_ToFile, Interface_Book_ToScreen {
         boolean isEven = false;
         String previousPage = "";
         try {
-            FileWriter fileWriter = new FileWriter(book.getTitle() + ".txt");
+            FileWriter fileWriter = new FileWriter("SOFTWARE_ARCHITECTURE/LAB/LAB07 - SOLID/book/"+book.getTitle() + ".txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             do {
                 if (isEven) {

@@ -1,4 +1,4 @@
-package com.solid.lsp;
+// package com.solid.lsp;
 
 public class Rectangle {
     // DO NOT EDIT THE FILE FROM THIS LINE ONWARD!!

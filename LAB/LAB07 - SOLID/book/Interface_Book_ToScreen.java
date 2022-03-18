@@ -1,4 +1,4 @@
-package com.solid.book; //create interFace -> ToFile
+package book; //create interFace -> ToFile
 public interface Interface_Book_ToScreen{
     public void printToScreen();
 }

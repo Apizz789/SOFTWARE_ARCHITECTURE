@@ -1,4 +1,4 @@
-package com.solid.book;
+package book;
 import java.util.List;
 public class BookReader {
     public static void main(String[] args) {
