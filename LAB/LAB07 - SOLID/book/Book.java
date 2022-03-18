@@ -22,15 +22,12 @@ public class Book implements Interface_Book_Pubilher, Interface_Book_Reader {
             currentPage = null;
         }
     }
-
     public String getTitle() {
         return title;
     }
-
     public String getCurrentPage() {
         return currentPage;
     }
-
     public boolean turnToNextPage() {
         if (iterator.hasNext()) {
             currentPage = iterator.next();
@@ -39,14 +36,12 @@ public class Book implements Interface_Book_Pubilher, Interface_Book_Reader {
             return false;
         }
     }
-
     public void printToScreen() {
         Book book = this;
         do {
             System.out.println(book.getCurrentPage());
         } while (book.turnToNextPage());
     }
-
     public void printToFile() {
         Book book = this;
         boolean isEven = false;
