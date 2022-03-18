@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.ListIterator;
 
-public class Book implements Interface_Book_Pubilher, Interface_Book_Reader {
+public class Book implements Interface_Book_ToFile, Interface_Book_ToScreen {
     private String title;
     private List<String> pages;
     private ListIterator<String> iterator;
