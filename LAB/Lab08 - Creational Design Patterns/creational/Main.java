@@ -20,20 +20,21 @@ public class Main {
             e.printStackTrace();
         }
 
-        // Expected usage
+        // Current XML
         BookMetadataExporter exporterXML = new XMLBookMetadataExporter();
         exporterXML.add(TestData.sailboatBook);
         exporterXML.add(TestData.GoFBook);
         exporterXML.export(System.out);
-
+        // Current JSON
         BookMetadataExporter exporterJSON = new JSONBookMetadataExporter();
         exporterJSON.add(TestData.cleanArchBook);
         exporterJSON.add(TestData.dinosaurBook);
         exporterJSON.export(System.out);
-
+        // Current CSV
         BookMetadataExporter exporterCSV = new CSVBookMetadataExporter();
         exporterCSV.add(TestData.dragonBook);
         exporterCSV.add(TestData.sailboatBook);
         exporterCSV.export(System.out);
+
     }
 }

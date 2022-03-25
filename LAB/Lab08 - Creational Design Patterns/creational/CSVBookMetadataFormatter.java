@@ -21,7 +21,6 @@ public class CSVBookMetadataFormatter implements BookMetadataFormatter {
         writer = new StringWriter();
         try {
             csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
-//            Stream<String> headers = Arrays.stream(Book.Metadata.values()).map(Book.Metadata::getValue);
             List<String> headers = new LinkedList<String>();
             for (Book.Metadata metadata : Book.Metadata.values()) {
                 headers.add(metadata.value);
