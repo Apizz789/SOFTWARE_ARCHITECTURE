@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParserConfigurationException, IOException {
 
         // Current usage
         BookMetadataFormatter formatter = null;
@@ -21,9 +21,19 @@ public class Main {
         }
 
         // Expected usage
-//        BookMetadataExporter exporter = new XMLBookMetadataExporter();
-//        exporter.add(TestData.sailboatBook);
-//        exporter.add(TestData.GoFBook);
-//        exporter.export(System.out);
+        BookMetadataExporter exporterXML = new XMLBookMetadataExporter();
+        exporterXML.add(TestData.sailboatBook);
+        exporterXML.add(TestData.GoFBook);
+        exporterXML.export(System.out);
+
+        BookMetadataExporter exporterJSON = new JSONBookMetadataExporter();
+        exporterJSON.add(TestData.cleanArchBook);
+        exporterJSON.add(TestData.dinosaurBook);
+        exporterJSON.export(System.out);
+
+        BookMetadataExporter exporterCSV = new CSVBookMetadataExporter();
+        exporterCSV.add(TestData.dragonBook);
+        exporterCSV.add(TestData.sailboatBook);
+        exporterCSV.export(System.out);
     }
 }
