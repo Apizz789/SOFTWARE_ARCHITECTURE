@@ -1,5 +1,4 @@
-package edu.parinya.softarchdesign.structural;
-
+package lab09.structural;
 
 public class Main {
 
@@ -22,15 +21,19 @@ public class Main {
         teamMedicalDragon.removeMember(monji);
         System.out.println("After Monji leaves, The total price of the Team Medical Dragon is " + teamMedicalDragon.getPrice());
         System.out.println("================================");
-
+        //  Structural Design Pattern
         HealthcareWorkerTeam theGoodDoctor = new HealthcareWorkerTeam();
+
         Surgeon freddie = new Surgeon("Freddie Highmore", 500);
         Surgeon nicholas = new Surgeon("Nicholas Gonzalez", 2000);
+
         HealthcareWorkerDecorator timeNicholas = new TimeLoggingHealthcareWorker(nicholas);
         HealthcareWorkerDecorator taxNicholas = new TaxPayingHealthcareWorker(timeNicholas);
+
         Surgeon antonia = new Surgeon("Antonia Thomas", 500);
         HealthcareWorkerDecorator timeAnotonia = new TimeLoggingHealthcareWorker(antonia);
         Surgeon chuku = new Surgeon("Chuku Modu", 500);
+
         theGoodDoctor.addMember(freddie);
         theGoodDoctor.addMember(taxNicholas);
         theGoodDoctor.addMember(timeAnotonia);

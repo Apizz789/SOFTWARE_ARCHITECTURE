@@ -1,5 +1,5 @@
 // Please DO NOT MODIFY THIS FILE
-package edu.parinya.softarchdesign.structural;
+package lab09.structural;
 
 public class Nurse extends HealthcareWorker {
     public Nurse(String name, double price) {
