@@ -1,4 +1,4 @@
-package edu.parinya.softarchdesign.behavioral;
+package behavioral1;
 
 public class Main {
     public static void main(String[] args) {

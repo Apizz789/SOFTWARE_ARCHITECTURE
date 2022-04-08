@@ -1,4 +1,4 @@
-package edu.parinya.softarchdesign.behavioral;
+package behavioral1;
 
 public class EconomicNews extends News {
     EconomicNews(String content) {super(content);}

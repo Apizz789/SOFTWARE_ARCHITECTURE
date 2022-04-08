@@ -1,4 +1,4 @@
-package edu.parinya.softarchdesign.behavioral;
+package behavioral1;
 
 public abstract class News {
     private String content;
