@@ -1,4 +1,4 @@
-package edu.parinya.softarchdesign.behavior2;
+package lab09;
 
 // DO NOT MODIFY ANYTHING BELOW THIS LINE!!
 import java.util.List;
